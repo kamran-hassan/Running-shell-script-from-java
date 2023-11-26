@@ -1,1 +1,3 @@
-print("Print from python .....\n...."+str(2+5))
+s = input()
+
+print("Print from python .....\n....hi "+s)

@@ -1,6 +1,9 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
 
 public class ProcessBuilderDemo {
 
@@ -15,10 +18,10 @@ public class ProcessBuilderDemo {
         // Input to be passed to the external program (if needed)
         // You can write to the process's input stream if the external program reads from stdin
         // For example:
-        /* BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
-           writer.write("input_data\n");
-           writer.flush();
-        */
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
+        writer.write("kamran hassa\n");
+        writer.flush();
+        
 
         // Read output from the external program
         BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
