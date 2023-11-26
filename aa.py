@@ -1,0 +1,1 @@
+print("Print from python .....\n...."+str(2+5))
